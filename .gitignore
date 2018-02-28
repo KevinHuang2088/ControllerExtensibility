@@ -1,2 +1,2 @@
-../../ControllerExtensibility.v12.suo
-../ControllerExtensibility.csproj
+*.suo
+*.csproj
