@@ -19,5 +19,11 @@ namespace ControllerExtensibility.Controllers
         {
             return View("Result", new Result { ControllerName = "Customer", ActionName = "List" });
         }
+
+        [NonAction]
+        public ActionResult MyAction()
+        {
+            return View();
+        }
     }
 }
