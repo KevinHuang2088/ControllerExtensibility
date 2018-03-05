@@ -87,6 +87,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ActionInvokerController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -113,6 +114,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\ActionInvoker\" />
     <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Home\" />
     <Folder Include="Views\Product\" />
   </ItemGroup>
   <PropertyGroup>
@@ -126,7 +128,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49747</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
