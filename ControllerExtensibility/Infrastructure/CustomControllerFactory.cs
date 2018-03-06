@@ -33,11 +33,11 @@ namespace ControllerExtensibility.Infrastructure
                 (IController)DependencyResolver.Current.GetService(targetType);
         }
 
-        public SessionStateBehavior GetControllerSessionBehavior(RequestContext requestContext, 
-            string controllerName)
-        {
-            return SessionStateBehavior.Default;
-        }
+        //public SessionStateBehavior GetControllerSessionBehavior(RequestContext requestContext, 
+        //    string controllerName)
+        //{
+        //    return SessionStateBehavior.Default;
+        //}
 
         public void ReleaseController(IController controller)
         {
