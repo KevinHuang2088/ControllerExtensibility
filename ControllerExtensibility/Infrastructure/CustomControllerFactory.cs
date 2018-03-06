@@ -47,5 +47,19 @@ namespace ControllerExtensibility.Infrastructure
                 disposable.Dispose();
             }
         }
+
+        public SessionStateBehavior GetControllerSessionBehavior(RequestContext requestContext,
+            string controllerName)
+        {
+            switch (controllerName)
+            {
+                case "Home":
+                    return SessionStateBehavior.ReadOnly;
+                case "Product":
+                    return SessionStateBehavior.Required;
+                default:
+                    return SessionStateBehavior.Default;
+            }
+        }
     }
 }
