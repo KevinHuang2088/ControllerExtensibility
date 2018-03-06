@@ -17,5 +17,11 @@ namespace ControllerExtensibility.Controllers
             });            
             return View((object)data);
         }
+
+        public async Task<ActionResult> ConsumeAsyncMethed()
+        {
+            string data = await new RemoteService().GetRemoteDataAsync();
+            return View("Data", (object)data);
+        }
     }
 }
